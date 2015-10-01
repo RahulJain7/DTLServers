@@ -40,7 +40,7 @@ def Main():
           Xstr = splitdata[No:len(splitdata)]
           X = [float(i) for i in Xstr]
           PVFlash = dtl.PVFFlash(splitdata[0],0,P,VF,Comp,X)
-          ptfl = str(PVFlash[2][0]) + " "
+          ptfl = " " + str(PVFlash[2][0]) + " "
           if Nc>2:
            for j in range(3,Nc+1):
              ptfl = ptfl + str(PVFlash[j][0]) + " "
